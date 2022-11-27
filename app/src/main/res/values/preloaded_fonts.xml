@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/luckiest_guy</item>
+        <item>@font/macondo_swash_caps</item>
+        <item>@font/ruslan_display</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>

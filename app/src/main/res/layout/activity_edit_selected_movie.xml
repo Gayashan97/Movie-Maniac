@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGreen"
+    tools:context=".EditSelectedMovie">
+
+    <ImageView
+        android:id="@+id/imageStar10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:onClick="star10Clicked"
+        app:layout_constraintBottom_toBottomOf="@+id/imageStar4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageStar4"
+        android:src="@drawable/ic_baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/imageStar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star9Clicked"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar10"
+        app:layout_constraintTop_toTopOf="@+id/imageStar10" />
+
+    <ImageView
+        android:id="@+id/imageStar8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star8Clicked"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar9"
+        app:layout_constraintTop_toTopOf="@+id/imageStar9" />
+
+    <ImageView
+        android:id="@+id/imageStar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star7Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar8"
+        app:layout_constraintTop_toTopOf="@+id/imageStar8"
+        android:src="@drawable/ic_baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/imageStar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star6Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar7"
+        app:layout_constraintTop_toTopOf="@+id/imageStar7"
+        android:src="@drawable/ic_baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/imageStar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="star1Clicked"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSelectedFavourite"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageStar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star4Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar5"
+        app:layout_constraintTop_toTopOf="@+id/imageStar3"
+        android:src="@drawable/ic_baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/imageStar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star3Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar4"
+        app:layout_constraintTop_toTopOf="@+id/imageStar2"
+        android:src="@drawable/ic_baseline_star_24" />
+
+    <ImageView
+        android:id="@+id/imageStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star2Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar3"
+        app:layout_constraintTop_toTopOf="@+id/imageStar1"
+        android:src="@drawable/ic_baseline_star_24" />
+
+    <TextView
+        android:id="@+id/textEditFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Favourite :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textEditReview"
+        app:layout_constraintTop_toBottomOf="@+id/textEditReview" />
+
+    <EditText
+        android:id="@+id/editSelectedFavourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Favourite"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editSelectedReview"
+        app:layout_constraintTop_toBottomOf="@+id/editSelectedReview" />
+
+    <TextView
+        android:id="@+id/textEditDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Director :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textEditYear"
+        app:layout_constraintTop_toBottomOf="@+id/textEditYear" />
+
+    <EditText
+        android:id="@+id/editSelectedDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Director"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editSelectedYear"
+        app:layout_constraintTop_toBottomOf="@+id/editSelectedYear" />
+
+    <TextView
+        android:id="@+id/textEditReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Review :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textEditActors"
+        app:layout_constraintTop_toBottomOf="@+id/textEditActors" />
+
+    <EditText
+        android:id="@+id/editSelectedReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Review"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editSelectedActors"
+        app:layout_constraintTop_toBottomOf="@+id/editSelectedActors" />
+
+    <TextView
+        android:id="@+id/textEditActors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Actors :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textEditDirector"
+        app:layout_constraintTop_toBottomOf="@+id/textEditDirector" />
+
+    <EditText
+        android:id="@+id/editSelectedActors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Actors"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editSelectedDirector"
+        app:layout_constraintTop_toBottomOf="@+id/editSelectedDirector" />
+
+    <EditText
+        android:id="@+id/editSelectedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Movie Title"
+        android:textColor="@color/greenText"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEditYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Year :"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editSelectedYear"
+        app:layout_constraintEnd_toStartOf="@+id/editSelectedYear" />
+
+    <EditText
+        android:id="@+id/editSelectedYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Year"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSelectedTitle" />
+
+    <Button
+        android:id="@+id/buttonEditUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/trade_winds"
+        android:onClick="updateMovies"
+        android:text="Update"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/greenMiddle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageStar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="star5Clicked"
+        app:layout_constraintEnd_toStartOf="@+id/imageStar6"
+        app:layout_constraintTop_toTopOf="@+id/imageStar6"
+        android:src="@drawable/ic_baseline_star_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

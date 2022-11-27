@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coursework2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Coursework2">
+        <activity android:name=".RatingsImage"
+            android:parentActivityName=".RatingsSelected"></activity>
+        <activity
+            android:name=".RatingsSelected"
+            android:parentActivityName=".Ratings" />
+        <activity
+            android:name=".Ratings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SearchMovie"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditSelectedMovie"
+            android:parentActivityName=".EditMovie" />
+        <activity
+            android:name=".EditMovie"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FavouriteMovie"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DisplayMovie"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterMovie"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

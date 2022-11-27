@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGreen"
+    tools:context=".RegisterMovie">
+
+    <EditText
+        android:id="@+id/editRegisterDirector"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/trade_winds"
+        android:hint="Director"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editRegisterYear"
+        app:layout_constraintTop_toBottomOf="@+id/editRegisterYear" />
+
+    <TextView
+        android:id="@+id/textRegisterDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/trade_winds"
+        android:text="Director:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editRegisterDirector"
+        app:layout_constraintEnd_toEndOf="@+id/textRegisterYear" />
+
+    <TextView
+        android:id="@+id/textRegisterActors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/trade_winds"
+        android:text="Actors/Actresses:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editRegisterActors"
+        app:layout_constraintEnd_toEndOf="@+id/textRegisterDirector" />
+
+    <EditText
+        android:id="@+id/editRegisterActors"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/trade_winds"
+        android:hint="Actors and actresses"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editRegisterDirector"
+        app:layout_constraintTop_toBottomOf="@+id/editRegisterDirector" />
+
+    <TextView
+        android:id="@+id/textRegisterRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/trade_winds"
+        android:text="Rating:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editRegisterRating"
+        app:layout_constraintEnd_toEndOf="@+id/textRegisterActors" />
+
+    <TextView
+        android:id="@+id/textRegisterReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Review:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/editRegisterReview"
+        app:layout_constraintEnd_toEndOf="@+id/textRegisterRating" />
+
+    <EditText
+        android:id="@+id/editRegisterTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:fontFamily="@font/trade_winds"
+        android:hint="Movie title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Title:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editRegisterTitle"
+        app:layout_constraintEnd_toStartOf="@+id/editRegisterTitle" />
+
+    <EditText
+        android:id="@+id/editRegisterYear"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/trade_winds"
+        android:hint="Year"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintStart_toStartOf="@+id/editRegisterTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editRegisterTitle" />
+
+    <TextView
+        android:id="@+id/textRegisterYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/trade_winds"
+        android:text="Year:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editRegisterYear"
+        app:layout_constraintEnd_toEndOf="@+id/textRegisterTitle" />
+
+    <EditText
+        android:id="@+id/editRegisterRating"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/trade_winds"
+        android:hint="Your rating"
+        android:maxLength="2"
+        android:digits="123456789"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/editRegisterActors"
+        app:layout_constraintTop_toBottomOf="@+id/editRegisterActors" />
+
+    <EditText
+        android:id="@+id/editRegisterReview"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/trade_winds"
+        android:hint="Your review"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editRegisterRating"
+        app:layout_constraintTop_toBottomOf="@+id/editRegisterRating" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="Register Movie"
+        android:textColor="@color/greenText"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegisterSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/trade_winds"
+        android:onClick="saveRegisteredMovie"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/greenMiddle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
